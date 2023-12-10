@@ -1,0 +1,51 @@
+<!DOCTYPE tangram>
+<document writing-mode="lr-tb" lang="en-US">
+  <title mode="invisible">Example</title>
+  <group clip="children[0]">
+    <union ref="parent" scope="self">
+      <rect x1="10" y1="30" width="100" height="200" />
+      <rect x1="70" y1="120" x2="430" y2="300" />
+    </union>
+    <text>Example.</text>
+  </group>
+  <group>
+    <group scope="children" x1="prior.x2 + 10 ?? parent.x1">
+      <text align="justify">This is text.</text>
+      <embed src="./another-doc.tgm" />
+    </group>
+  </group>
+  <rect role="button">
+    <text>Hello</text>
+  </rect>
+</document>
+<!--
+
+ATTRIBUTES
+
+- writing-mode
+- lang
+- mode
+- ref
+- scope
+- x1
+- y1
+- x2
+- y2
+- width
+- height
+- align
+- src
+- role
+- clip
+
+ELEMENTS
+
+- document
+- title
+- group
+- rect
+- text
+- embed
+- union
+
+-->
